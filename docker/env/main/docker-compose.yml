@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  main:
+    image: nginx:latest
+    container_name: 'main'
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./etc/nginx/conf.d/:/etc/nginx/conf.d
+    environment:
+      VIRTUAL_HOST: 'testrehop.dev'
+      LETSENCRYPT_HOST: 'testrehop.dev'
+      LETSENCRYPT_EMAIL: 'example@testrehop.dev'
+
+
+networks:
+  default:
+    external:
+      name: shared

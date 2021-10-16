@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  app2:
+    image: nginx:latest
+    container_name: 'app2'
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./etc/nginx/conf.d/:/etc/nginx/conf.d
+    environment:
+      VIRTUAL_HOST: 'testapp2.rehop.com'
+      LETSENCRYPT_HOST: 'testapp2.rehop.com'
+      LETSENCRYPT_EMAIL: 'example@testapp2.rehop.com'
+
+
+networks:
+  default:
+    external:
+      name: shared
