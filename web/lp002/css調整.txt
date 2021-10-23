@@ -1,0 +1,21 @@
+
+layout.css
+中央文字
+.top-lead
+
+.top-lead #tl2
+
+
+parts.css 
+中央ボックス
+#top-main:before{
+
+
+ロゴ
+
+/* #rehop_logo_area {
+margin-left:130px;
+*/
+
+右ハンバーガー
+openbtn

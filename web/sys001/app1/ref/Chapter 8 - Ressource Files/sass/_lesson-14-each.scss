@@ -1,0 +1,72 @@
+// Lesson 14 => Sass @each Rule
+section {
+  div {
+    height: 30rem;
+    width: 50rem;
+  }
+}
+
+// section {
+//   .ballet {
+//     background-image: url("../img/ballet.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .cat {
+//     background-image: url("../img/cat.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .gramophone {
+//     background-image: url("../img/gramophone.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .sparrow {
+//     background-image: url("../img/sparrow.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .sunset {
+//     background-image: url("../img/sunset.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+
+//   .turkey {
+//     background-image: url("../img/turkey.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+
+// Method -1 => the long way
+// $bg-pics: (ballet, cat, gramophone, sparrow, sunset, turkey);
+// @each $bg-divs in $bg-pics {
+//   .#{$bg-divs} {
+//     background-image: url("../img/#{$bg-divs}.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+
+// Method -2 => the short way
+// @each $bg-divs in (ballet, cat, gramophone, sparrow, sunset, turkey) {
+//   .#{$bg-divs} {
+//     background-image: url("../img/#{$bg-divs}.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }

@@ -1,0 +1,53 @@
+// Lesson 13 => Sass @extend rule
+
+// Method -1 => Using CSS Selectors
+// .section-1 {
+//   background-color: color(color-primary);
+
+//   &__content {
+//     padding: 20px;
+//     color: color(color-white);
+
+//     &--title {
+//       margin: 15px 0;
+//       font-family: Arial, Helvetica, sans-serif;
+//       letter-spacing: 2px;
+//     }
+
+//     &--para {
+//       @extend .section-1__content--title;
+//     }
+//   }
+// }
+
+// .section-2 {
+//   &__content {
+//     &--para {
+//       @extend .section-1__content--title;
+//     }
+//   }
+// }
+
+// Method -2 => Using Placeholder Rulesets
+// %text-styling {
+//   margin: 15px 0;
+//   font-family: Arial, Helvetica, sans-serif;
+//   letter-spacing: 2px;
+// }
+
+// .section-1 {
+//   background-color: color(color-primary);
+
+//   &__content {
+//     padding: 20px;
+//     color: color(color-white);
+
+//     &--title {
+//       @extend %text-styling;
+//     }
+
+//     &--para {
+//       @extend %text-styling;
+//     }
+//   }
+// }

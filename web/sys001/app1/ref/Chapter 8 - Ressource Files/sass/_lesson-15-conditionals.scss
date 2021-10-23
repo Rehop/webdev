@@ -1,0 +1,18 @@
+// Lesson 15 => Sass Conditionals => @if Rule
+
+// @mixin section($size) {
+//   width: $size;
+//   height: $size;
+
+//   @if $size < 200px {
+//     background-color: color(color-primary);
+//   } @else if $size == 250px {
+//     background-color: color(color-secondary);
+//   } @else {
+//     background-color: green;
+//   }
+// }
+
+// section {
+//   @include section(350px);
+// }

@@ -1,0 +1,58 @@
+// Lesson 18 => Sass Arithmatic Operators (Addition, Subtraction, Multiplication & Division)
+
+// ***************************************************************************
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*The Addition Operator
+
+// ******************************* Regular CSS calc() function Addition
+// h2 {
+//   // 100%      1%
+//   // 1000       X
+
+//   font-size: calc(10px + 1vw);
+// }
+
+// ******************************* Sass Addition Operator
+// h2 {
+//   // font-size: (10px + 10);
+//   font-size: (10px + 10px);
+// }
+
+// ***************************************************************************
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*The Subtraction Operator
+
+// ******************************* Regular CSS calc() function Subtraction
+// h2 {
+//   font-size: calc(25px - 5px);
+// }
+
+// ******************************* Sass Subtraction Operator
+// h2 {
+//   // font-size: (35px - 5);
+//   font-size: (35px - 5px);
+// }
+
+// ***************************************************************************
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*The Multiplication Operator
+
+// ******************************* Regular CSS calc() function Multiplication
+// h2 {
+//   font-size: calc(10px * 5);
+// }
+
+// ******************************* Sass Multiplication Operator
+// h2 {
+//   font-size: (15px * 5);
+// }
+
+// ***************************************************************************
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*The Division Operator
+
+// ******************************* Regular CSS calc() function Division
+// h2 {
+//   font-size: calc(100px / 5);
+// }
+
+// ******************************* Sass Division Operator
+// h2 {
+//   font-size: (150px / 5);
+// }

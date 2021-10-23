@@ -1,0 +1,17 @@
+// Lesson 10 => Sass Functions => @function rule
+
+@function color($color-name) {
+  // return => calculate => wrap everything up => move yourself and do your job
+  @return map-get($colors, $color-name);
+}
+
+// inside a function call, we pass a function argument that is actually the calculated value of the function parameter
+.section {
+  background-color: color(color-primary);
+  padding: 40px;
+
+  &__content {
+    // background-color: map-get($colors, color-secondary);
+    background-color: color(color-secondary);
+  }
+}

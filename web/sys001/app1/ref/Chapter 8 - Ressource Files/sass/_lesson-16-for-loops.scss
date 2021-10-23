@@ -1,0 +1,15 @@
+// Lesson 16 => Sass For Loops => @for Rule
+// .gallery {
+//   div[class^="gallery__content"] {
+//     height: 30rem;
+//     width: 30rem;
+//   }
+// }
+
+// @for $img from 1 through 6 {
+//   .gallery__content-#{$img} {
+//     background-image: url("../img/gallery-#{$img}.jpg");
+//   }
+// }
+
+// #{} => template literal => it is used to access the value of any variable
