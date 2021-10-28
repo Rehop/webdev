@@ -1,0 +1,18 @@
+version: '3'
+services:
+
+  bitkids:
+    image: nginx:latest
+    container_name: 'bitkids'
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./etc/nginx/conf.d/:/etc/nginx/conf.d
+    restart: always
+    environment:
+      VIRTUAL_HOST: bitkids.jp
+
+networks:
+  default:
+    external:
+      name: rd-shared
+
